@@ -1,5 +1,5 @@
 
-gdep = Gem::Dependency.new('activerecord', '~> 4.2.0')
+gdep = Gem::Dependency.new('activerecord', '>= 4.2.0')
 ar_version_cutoff = gdep.matching_specs.sort_by(&:version).last
 
 require 'postgres_ext/arel/nodes'
